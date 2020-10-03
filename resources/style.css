@@ -1,0 +1,233 @@
+@import url(https://fonts.googleapis.com/css?family=Libre+Franklin:100,200,300,400,500,700);
+
+
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Libre Franklin', Helvetica;
+}
+
+.container 
+{ 
+    width: 100%; 
+}
+
+section 
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 3rem;
+}
+
+section .logo 
+{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; 
+}
+
+section .logo img 
+{
+    height: 18px;
+    padding: 1rem;
+}
+
+section h1 
+{
+    font-weight: 200;
+    color: hsl(0, 0%, 59%);
+    padding: 0.8rem;
+    font-size: 2rem;
+}
+
+section h1 span 
+{
+    font-weight: 1000;
+    color: #000;
+}
+
+section h2 
+{
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+section form
+{
+    padding: 1rem 2rem 2rem;
+    display: flex;
+    margin: 0 auto; 
+    width: 95%;
+    justify-content: center;
+}
+
+section form input 
+{
+    padding: 0.7rem 1.5rem;
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 30px;
+    margin: 0.5rem; 
+    width: 23%; 
+    outline: none;
+}
+
+section form input::placeholder 
+{
+    color: hsl(223, 100%, 88%);
+    font-size: 0.7rem;
+}
+
+section form p 
+{
+    color: #fa5d5d;
+    position: absolute;
+    left: 36%;
+    top: 37%;
+    visibility: hidden; 
+}
+
+section form #submit 
+{
+    padding: 0.7rem;
+    color: #fff;
+    background: hsl(223, 87%, 63%);
+    width: 15%;
+    box-shadow: 0 4px 5px hsl(223, 96%, 81%) ;
+    border: none;
+    font-size: 0.7rem;
+}
+
+section form #submit:hover 
+{
+    background: hsl(223, 83%, 77%);
+}
+
+section #dashboard 
+{ 
+    height: 16rem;
+    margin: 0 auto;
+}
+
+section .icons 
+{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+section .icons a 
+{ 
+    padding: 0.25rem 0.45rem;  
+    border-radius: 50%;
+    border: 1px solid hsl(223, 100%, 88%); 
+    margin: 3rem 0.5rem 1rem;  
+} 
+
+section .icons #facebook 
+{
+    background: url(../images/facebook.png) no-repeat center center;
+    background-size: 14px 14px; 
+    padding: 12px;
+}
+
+section .icons #facebook:hover 
+{
+    background-image: url(../images/facebook2.png);
+    background-color: hsl(223, 87%, 63%);
+}
+
+section .icons #twitter 
+{
+    background: url(../images/twitter.png) no-repeat center center;
+    background-size: 14px 14px; 
+    padding: 12px;
+}
+
+section .icons #twitter:hover 
+{
+    background-image: url(../images/twitter2.png);
+    background-color: hsl(223, 87%, 63%);
+}
+
+section .icons #instagram 
+{
+    background: url(../images/instagram.png) no-repeat center center;
+    background-size: 14px 14px; 
+    padding: 12px;
+}
+
+section .icons #instagram:hover 
+{
+    background-image: url(../images/instagram2.png);
+    background-color: hsl(223, 87%, 63%);
+}
+
+section p 
+{
+    font-size: 0.7rem;
+    padding: 6rem auto 0
+}
+
+
+@media (max-width: 991px)
+{
+    section form 
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto 0 -1rem;
+    }
+
+    section form input 
+    {
+        margin: 0.8rem auto;
+        width: 65%;
+    }
+
+    section form p 
+    { 
+        top: 33%;
+        left: 23%;
+    }
+
+    section form #submit 
+    {
+        width: 72%;
+    }
+}
+
+@media (max-width: 530px) 
+{
+
+    section 
+    { 
+        padding: 3rem 1rem;
+    }
+
+    section h1 
+    {
+        font-size: 1.5rem;
+    }
+
+    section form 
+    {
+        padding: 0;
+        margin: 2rem auto;
+    }
+
+    section form p 
+    {
+        top: 36%;
+    }
+    section #dashboard 
+    {
+        height: 12rem;
+        padding: 0.5rem;
+    }
+}
